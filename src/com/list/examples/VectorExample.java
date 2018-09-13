@@ -1,4 +1,4 @@
-package com.lists.examples;
+package com.list.examples;
 
 import java.util.Vector;
 
