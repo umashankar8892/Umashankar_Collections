@@ -14,7 +14,6 @@ public class PrintOddNumber extends Thread {
 	}
 
 	public void run() {
-		System.out.println("Running PrintOddNumber task");
 		lock.lock();
 		System.out.println("Acquired lock on PrintOddNumber");
 		for (int i = 0; i < 10; i++) {

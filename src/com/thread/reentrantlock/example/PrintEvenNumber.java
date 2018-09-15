@@ -13,7 +13,6 @@ public class PrintEvenNumber extends Thread {
 	}
 
 	public void run() {
-		System.out.println("Running printEvenNumber task");
 		lock.lock();
 		System.out.println("Acquired lock on printEvenNumber");
 		for (int i = 0; i < 10; i++) {

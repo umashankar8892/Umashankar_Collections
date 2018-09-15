@@ -16,7 +16,6 @@ public class PrintOddNumber extends Thread{
 	
 	public void run() {
 		try {
-			System.out.println("Thread "+threadName + " is executing");
 			for(int i=0;i<10;i++) {
 				if(i%2==1)
 					System.out.println("Thread "+threadName +" "+i);

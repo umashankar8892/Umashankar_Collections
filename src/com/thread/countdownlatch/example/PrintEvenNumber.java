@@ -16,8 +16,6 @@ public class PrintEvenNumber extends Thread{
 	}
 
 	public void run() {
-			System.out.println("Thread "+threadName + " is executing");
-			
 			for(int i=0;i<10;i++) {
 				if(i%2==0)
 					System.out.println("Thread "+threadName +" "+i);

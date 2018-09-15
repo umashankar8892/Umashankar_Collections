@@ -10,6 +10,5 @@ public class DriverClass {
 		PrintOddNumber pon = new PrintOddNumber("Thread2", lock);
 		pon.start();
 		pen.start();
-		
 	}
 }
