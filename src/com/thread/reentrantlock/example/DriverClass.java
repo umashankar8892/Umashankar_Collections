@@ -7,11 +7,9 @@ public class DriverClass {
 	public static void main(String args[]) {
 		Lock lock = new ReentrantLock();
 		PrintEvenNumber pen = new PrintEvenNumber("Thread1",lock);
-		PrintEvenNumber pen1 = new PrintEvenNumber("Thread2",lock);
-		PrintEvenNumber pen3 = new PrintEvenNumber("Thread3",lock);
-		
+		PrintOddNumber pon = new PrintOddNumber("Thread2", lock);
+		pon.start();
 		pen.start();
-		pen1.start();
-		pen3.start();
+		
 	}
 }
